@@ -65,14 +65,11 @@ initial DWP use case, the event metadata alone may provide sufficient informatio
 
 1. DWP registers a subscription with event filters and a webhook URL.  
 2. HMCTS detects relevant events from CFT/CCD event history.  
-3. HMCTS sends metadata notifications to DWP.  
-4. DWP may optionally call a pull API for additional data.
+3. HMCTS sends metadata notifications to DWP.
 
-This minimises roadmap impact on core CFT systems and fits the federated enablement model.
+### High‑Level Sequence Diagram
 
-## High‑Level Sequence Diagram
-
-### Subscription Registration & Retrieval Flow
+#### Subscription Registration & Retrieval Flow
 
 ```mermaid
 sequenceDiagram
@@ -96,7 +93,7 @@ sequenceDiagram
     EventAPI-->>Consumer: 200 OK<br/>{subscription details}
 ```
 
-### Event Publication & Notification Flow
+#### Event Publication & Notification Flow
 
 ```mermaid
 sequenceDiagram
