@@ -23,9 +23,11 @@ These issues are especially acute for:
 Although these challenges are described from a DWP perspective, they highlight a broader class of problems that any 
 external partner may face when timely awareness of case activity is required.
 
-### Technical Challenges
-Across HMCTS, integrations remain fragmented and inconsistent. Current patterns rely heavily on email, lack filtering, 
-and provide no standardised way of exposing real‑time case activity. This creates operational risk, noise, and integration complexity.
+### Modernisation Drivers
+Existing integration patterns across HMCTS services vary in maturity and design. Many legacy processes still depend on 
+email-based notifications, which were appropriate for earlier operational workflows but email is no longer suitable for modern, 
+automated interoperability and represents technical debt that now needs to be addressed. Moving toward a more consistent, event‑driven approach will support improved 
+reliability, clarity, and interoperability for all consumers.
 
 These limitations affect all potential consumers, not just DWP, and underline the need for a scalable, reusable event‑notification pattern at the boundary of HMCTS estate.
 
